@@ -1,11 +1,13 @@
 databases:
   - name: roblox-npc-ai-db
+    plan: free
     databaseName: roblox_npc_ai
     user: roblox_npc_ai
 
 services:
   - type: web
     name: roblox-npc-ai-backend
+    plan: free
     runtime: node
     buildCommand: npm install
     startCommand: npm start
