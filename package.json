@@ -1,0 +1,17 @@
+{
+  "name": "persistent-roblox-npc-ai-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "node --check src/server.js && node --check src/httpApp.js && node --check src/socialService.js && node --check src/repository.js && node --check src/ai.js && node --check src/aiSchemas.js && node --check src/rules.js && node --check src/db.js"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
